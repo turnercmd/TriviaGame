@@ -1,25 +1,41 @@
 html {
     background: url("assets/images/football.jpg") fixed;
+    }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
-
-.begin{
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    color:white;
     text-align: center;
-}
-
+    margin:auto;
+    padding:4px; 
+  }
 .go{
     width: 150px;
-  text-align: center;
-  margin:0 auto;
+    text-align: center;
+    margin:0 auto;
+    padding: 8px;
 }
 
-body{
+body
+{
     background-image: url("../images/footballfield.jpeg");
     font-size: 20px;
     font-family: sans-serif;
 }
 
 .question{
+    width: 80%;
     font-size: 24pt;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
@@ -27,18 +43,51 @@ body{
     color: rgb(255, 255, 255);
     text-shadow:brown ;
     background-color: rgba(44, 44, 44, 0.425);
-    background-size: inherit;
+    padding:30px;
+    display: block;
+    float: center;
+    margin: auto;
 }
 .answers {
+    width: 80%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px;
     text-align: center;
-    color:rgb(0, 24, 241);
-    background-color: rgba(255, 255, 255, 0.481);
+    color:rgb(232, 205, 2);
+    background-color: rgba(255, 255, 255, 0.297);
     margin: 15px;
-   
+    font-size:16pt;
+    margin:auto;
+    display: block;
+    float: center;
 }
 #submit{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.502);
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: hand;
+    margin: auto;
+    text-align: center;
+    display: block;
+    float: center;
+    
+    
+}
+#submit:hover{
+    background-color: rgb(52, 223, 44);
+    text-align: center;
+}
+
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+  }
+
+
+.banner-container{
     font-family: sans-serif;
     font-size: 20px;
     background-color: rgba(0, 0, 128, 0.502);
@@ -46,41 +95,14 @@ body{
     border: 0px;
     border-radius: 3px;
     padding: 20px;
-    cursor: pointer;
+    cursor: hand;
     margin: auto;
     text-align: center;
     display: block;
     float: center;
-    
+  }
+
+#results {
+    padding:10px;
+    font-size: 24pt;
 }
-#submit:hover{
-    background-color: #3a8;
-    text-align: center;
-}
-input[type="radio"]{
-    margin: 0 10px 0 10px;
-    
-  }
-  .button {
-  width: 150px;
-  text-align: center;
-  margin:0 auto;
-  }
-  .timer{
-    text-align: center;
-    margin:0 auto;
-    float: center;
-  }
-  .banner-container{
-      display:inline-block;
-      text-align: center;
-      border-radius: 12px;
-      padding: 20px; 
-      width: 400px;
-      height: 70px; 
-      color:white;
-      font-size: 18pt;
-      background-color: rgba(0, 0, 128, 0.502);
-      margin: 5px;
-  }
-  

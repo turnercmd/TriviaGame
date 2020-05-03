@@ -1,5 +1,4 @@
-
-    function startTimer() {
+function startTimer() {
         var seconds = 0;
 	timer = setInterval(function() {
 	    seconds ++;
@@ -7,7 +6,16 @@
             document.getElementById("minutes").innerText = parseInt(seconds / 60);
         }, 1000);
 
+        function timeOver () {
+            alert("Time is up!");
+            window.location.reload();
+        }
+        
+        setTimeout(timeOver, 120000);
 
+    $("#submit").click(function(){
+        $(this).remove();
+    });
 var myQuestions =[
     {
         question: "Who is the best football team of all time?",
@@ -108,7 +116,8 @@ var submitButton = document.getElementById('submit');
 
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton)
+{
 
     function showQuestions(questions, quizContainer){
     
@@ -185,7 +194,17 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     submitButton.onclick = function(){
         showResults(questions, quizContainer, resultsContainer);
+       
     }
-}
 
+   
+    }
+        //remove Start button on click
+
+        //stop timer on submit
+
+        
+        
+        //console log radio selection
+            //use console log to return partial answers if quiz is not completed
 }
